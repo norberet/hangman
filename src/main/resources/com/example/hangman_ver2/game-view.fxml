@@ -6,17 +6,15 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hangman_ver2.HelloController">
-   <children>
-      <Button fx:id="checkButton" layoutX="312.0" layoutY="204.0" mnemonicParsing="false" onAction="#checkLetter" prefHeight="26.0" prefWidth="85.0" text="Sprawdź" visible="false" />
-      <TextField fx:id="letterField" editable="false" layoutX="269.0" layoutY="204.0" onAction="#checkLetter" prefHeight="26.0" prefWidth="30.0" />
-      <Label layoutX="188.0" layoutY="209.0" text="Podaj litere:" />
-      <Label fx:id="passwordLabel" alignment="CENTER" ellipsisString="" layoutX="1.0" layoutY="153.0" prefHeight="26.0" prefWidth="600.0" text="Nacisnij start aby rozpacząć" textAlignment="CENTER">
-         <font>
-            <Font name="Comic Sans MS Bold" size="20.0" />
-         </font>
-      </Label>
-      <Button fx:id="startButton" layoutX="312.0" layoutY="205.0" mnemonicParsing="false" onAction="#start" prefHeight="26.0" prefWidth="85.0" text="START" />
-   </children>
+   <Button fx:id="checkButton" layoutX="312.0" layoutY="204.0" mnemonicParsing="false" onAction="#checkLetter" prefHeight="26.0" prefWidth="85.0" text="Sprawdź" visible="false" />
+   <TextField fx:id="letterField" editable="false" layoutX="269.0" layoutY="204.0" onAction="#checkLetter" prefHeight="26.0" prefWidth="30.0" />
+   <Label layoutX="188.0" layoutY="209.0" text="Podaj litere:" />
+   <Label fx:id="passwordLabel" alignment="CENTER" ellipsisString="" layoutX="1.0" layoutY="153.0" prefHeight="26.0" prefWidth="600.0" text="Nacisnij start aby rozpacząć" textAlignment="CENTER">
+      <font>
+         <Font name="Comic Sans MS Bold" size="20.0" />
+      </font>
+   </Label>
+   <Button fx:id="startButton" layoutX="312.0" layoutY="205.0" mnemonicParsing="false" onAction="#start" prefHeight="26.0" prefWidth="85.0" text="START" />
+   <Button fx:id="playAgainButton" layoutX="312.0" layoutY="205.0" mnemonicParsing="false" onAction="#playAgain" text="Zagraj jeszcze raz!" visible="false" />
 </AnchorPane>
