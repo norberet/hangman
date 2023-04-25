@@ -29,15 +29,16 @@ public class GameController extends  MainMenuController{
     private Button playAgainButton; //przycisk ponownej gry
 
     private final String password;
-    private StringBuilder hiddenPassword = new StringBuilder();
+    private final StringBuilder hiddenPassword = new StringBuilder();
     private String hiddenPass;
     private boolean importPassword = false;
-    private StringBuilder visiblePassword = new StringBuilder();
+    private final StringBuilder visiblePassword = new StringBuilder();
     private final List<Character> usedLetter = new ArrayList<>();
     private final int maxGood;
     private int good = 0;
     private int bad = 0;
     private long startTime;
+    private String name;
 
     public GameController(){
         PasswordSetter passwordSetter = new PasswordSetter();
@@ -145,7 +146,7 @@ public class GameController extends  MainMenuController{
             passwordLabel.setText("Wygrana! Hasło to: " + password);
             playAgainButton.setVisible(true);
             isGoodLabel.setTextFill(Color.valueOf("#0e9e40"));
-            isGoodLabel.setText("Twój czas: " + ((endTime -startTime)/1000) + " sekund");
+            isGoodLabel.setText(name + " twój czas: " + ((endTime -startTime)/1000) + " sekund. Gratulacje!");
         }
         else if(bad >= maxBad){
             //endTime = System.currentTimeMillis();
@@ -158,15 +159,20 @@ public class GameController extends  MainMenuController{
             isGoodLabel.setText("Następnym razem się uda!");
         }
     }
-    public void playAgain(){
-        checkButton.setVisible(true);
-        playAgainButton.setVisible(false);
-        System.out.println("Rozpoczynanie nowej gry");
-        //DODAC MOZLIWOSC ZAGRANIA OD NOWA
+
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override
     public void mainMenu(ActionEvent event) throws IOException {
         super.mainMenu(event);
+    }
+
+    @Override
+    public void newGame(ActionEvent event) throws IOException {
+        System.out.println("Rozpoczynanie nowej gry!");
+        super.newGame(event);
     }
 }

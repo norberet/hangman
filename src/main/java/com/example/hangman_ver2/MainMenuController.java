@@ -2,9 +2,12 @@ package com.example.hangman_ver2;
 
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -12,6 +15,7 @@ import java.io.IOException;
 public class MainMenuController {
     private Stage stage;
     private Scene scene;
+
 
     public void mainMenu(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("main-menu-view.fxml"));
@@ -37,4 +41,6 @@ public class MainMenuController {
         stage.setTitle("Wisielec");
         stage.show();
     }
+
+
 }

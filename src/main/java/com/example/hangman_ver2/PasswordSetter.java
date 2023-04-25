@@ -2,6 +2,7 @@ package com.example.hangman_ver2;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
@@ -12,6 +13,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class PasswordSetter extends MainMenuController{
+    public Button saveButton;
     @FXML
     private TextField addWordField;
     @FXML
@@ -37,7 +39,7 @@ public class PasswordSetter extends MainMenuController{
         }
         int index = (int)(Math.random()* password.size()); //wybieranie losoewgo slowa z listy
         System.out.println(password.get(index));
-        System.out.println(password);
+        //System.out.println(password);
         return password.get(index);
     }
     public void addWordtoFile(){
@@ -56,6 +58,7 @@ public class PasswordSetter extends MainMenuController{
             isSuccess.setTextFill(Color.valueOf("#b90a0a"));
             isSuccess.setText("Błąd");
         }
+        addWordField.clear();
     }
 
     @Override
