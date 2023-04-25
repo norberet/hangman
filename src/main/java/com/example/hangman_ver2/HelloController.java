@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.paint.Color;
 
 import java.util.*;
 
@@ -12,6 +13,8 @@ public class HelloController {
 
     @FXML
     private Label passwordLabel = new Label(); //wyswietlane haslo
+    @FXML
+    private Label isGoodLabel;
     @FXML
     private TextField letterField; //wprowadzanie litery
     @FXML
@@ -112,10 +115,14 @@ public class HelloController {
                         hiddenPassword.deleteCharAt(i);
                         hiddenPassword.insert(i, x);
                         good++;
+                        isGoodLabel.setTextFill(Color.valueOf("#0e9e40"));
+                        isGoodLabel.setText("Poprawna litera!");
                     }
                 }
             } else {
                 bad++;
+                isGoodLabel.setTextFill(Color.valueOf("#b90a0a"));
+                isGoodLabel.setText("Niepoprawna litera!");
             }
             passwordLabel.setText(String.valueOf(hiddenPassword));
         }
@@ -126,6 +133,8 @@ public class HelloController {
             checkButton.setVisible(false);
             passwordLabel.setText("Wygrana! Hasło to: " + password);
             playAgainButton.setVisible(true);
+            isGoodLabel.setTextFill(Color.valueOf("#0e9e40"));
+            isGoodLabel.setText("Koniec");
         }
         else if(bad >= maxBad){
             System.out.println("Przegrana");
@@ -133,12 +142,15 @@ public class HelloController {
             checkButton.setVisible(false);
             passwordLabel.setText("Przegrana! Hasło to: " + password);
             playAgainButton.setVisible(true);
+            isGoodLabel.setTextFill(Color.valueOf("#b90a0a"));
+            isGoodLabel.setText("Koniec!");
         }
     }
     public void playAgain(){
         checkButton.setVisible(true);
         playAgainButton.setVisible(false);
         System.out.println("Rozpoczynanie nowej gry");
+        //DODAC MOZLIWOSC ZAGRANIA OD NOWA
     }
 
 

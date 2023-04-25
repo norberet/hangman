@@ -17,4 +17,5 @@
    </Label>
    <Button fx:id="startButton" layoutX="312.0" layoutY="205.0" mnemonicParsing="false" onAction="#start" prefHeight="26.0" prefWidth="85.0" text="START" />
    <Button fx:id="playAgainButton" layoutX="312.0" layoutY="205.0" mnemonicParsing="false" onAction="#playAgain" text="Zagraj jeszcze raz!" visible="false" />
+   <Label fx:id="isGoodLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="190.0" layoutY="240.0" prefHeight="17.0" prefWidth="210.0" />
 </AnchorPane>
