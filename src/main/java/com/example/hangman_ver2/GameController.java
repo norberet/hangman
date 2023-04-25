@@ -1,15 +1,17 @@
 package com.example.hangman_ver2;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
 
+import java.io.IOException;
 import java.util.*;
 
 
-public class HelloController {
+public class GameController extends  MainMenuController{
 
     @FXML
     private Label passwordLabel = new Label(); //wyswietlane haslo
@@ -37,7 +39,7 @@ public class HelloController {
     private int bad = 0;
     private long startTime;
 
-    public HelloController(){
+    public GameController(){
         PasswordSetter passwordSetter = new PasswordSetter();
         password = passwordSetter.getPassword();
         maxGood = password.length(); //ilosc liter = ilosc mozliwie dobrych "strzalow"
@@ -163,8 +165,8 @@ public class HelloController {
         //DODAC MOZLIWOSC ZAGRANIA OD NOWA
     }
 
-
-
-
-
+    @Override
+    public void mainMenu(ActionEvent event) throws IOException {
+        super.mainMenu(event);
+    }
 }

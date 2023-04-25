@@ -29,4 +29,12 @@ public class MainMenuController {
         stage.setTitle("Wisielec");
         stage.show();
     }
+    public void addWord(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("add-word-view.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+        stage.setTitle("Wisielec");
+        stage.show();
+    }
 }
