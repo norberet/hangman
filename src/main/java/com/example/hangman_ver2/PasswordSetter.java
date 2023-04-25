@@ -15,7 +15,7 @@ public class PasswordSetter {
             password = new ArrayList<>();
             while (input.hasNext()){
                 password.add(input.nextLine().toUpperCase());
-            }
+            } //otwarcie pliku oraz wczytanie hasel do listy
 
         }
         catch (IOException e){
@@ -23,7 +23,7 @@ public class PasswordSetter {
             return "ERROR:001";
 
         }
-        int index = (int)(Math.random()* password.size());
+        int index = (int)(Math.random()* password.size()); //wybieranie losoewgo slowa z listy
         System.out.println(password.get(index));
         return password.get(index);
     }

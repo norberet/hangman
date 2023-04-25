@@ -9,38 +9,55 @@ import javafx.scene.control.TextField;
 public class HelloController {
 
     @FXML
-    private Label passwordLabel = new Label();
+    private Label passwordLabel = new Label(); //wyswietlane haslo
     @FXML
-    private TextField letterField;
+    private TextField letterField; //wprowadzanie litery
     @FXML
-    private Button checkButton;
+    private Button checkButton; //przycisk sprawdz
     @FXML
-    private Button startButton;
+    private Button startButton; //przycisk rozpoczecia
     @FXML
-    private Button playAgainButton;
+    private Button playAgainButton; //przycisk ponownej gry
 
     private final String password;
     private StringBuilder hiddenPassword = new StringBuilder();
     private String hiddenPass;
     private boolean importPassword = false;
     private StringBuilder visiblePassword = new StringBuilder();
-    final int maxBad = 5;
-    final int maxGood;
-    int good = 0;
-    int bad = 0;
+    private final int maxBad = 5;
+    private final int maxGood;
+    private int good = 0;
+    private int bad = 0;
     public HelloController(){
         PasswordSetter passwordSetter = new PasswordSetter();
         password = passwordSetter.getPassword();
-        maxGood = password.length();
-
+        maxGood = password.length(); //ilosc liter = ilosc mozliwie dobrych "strzalow"
+        //pobranie hasla z klasy PasswordSetter
 
 
         if(password.equals("ERROR:001")){
             passwordLabel.setText("Nie mozna zaladowac hasla");
             System.out.println("ERROR 001");
         }
-        else {
-            hiddenPassword.append("_ ".repeat(password.length()));
+        else { //jesli nie ma bledu to rozpoczynam ukrywanie hasla
+            if(password.contains(" ") || password.contains("-")) {
+                for (int i = 0; i < password.length(); i++) {
+                    if (password.charAt(i) == ' ') {
+                        hiddenPassword.append("  ");
+                        good++; //w przypadku bialych znakow drukujemy rozdzielenie wyrazow i dodajemy dobra dop
+                        //w celu poprawnego liczenia
+                    } else if (password.charAt(i) == '-') {
+                        hiddenPassword.append("- ");
+                        good++;
+                    } else {
+                        hiddenPassword.append("_ ");
+                    }
+                }
+            }else {
+                hiddenPassword.append("_ ".repeat(password.length()));
+                //jesli haslo sklada sie z jednego wyrazu to wszystko uzupelniamy znakiem '_' ze spacja
+            }
+
             for(int i = 0; i < password.length(); i++){
                 visiblePassword.append(password.charAt(i)).append(" ");
             }
