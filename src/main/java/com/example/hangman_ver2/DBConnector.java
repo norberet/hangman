@@ -1,7 +1,7 @@
 package com.example.hangman_ver2;
 import java.sql.*;
 
-public class DBConnector {
+public class DBConnector extends GameController{
 
     private final String username = "root";
     private final String password = "12345678";

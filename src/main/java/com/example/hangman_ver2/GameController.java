@@ -22,6 +22,10 @@ public class GameController extends  MainMenuController{
     @FXML
     private TextField letterField; //wprowadzanie litery
     @FXML
+    private TextField saveScoreField;
+    @FXML
+    private Button saveScoreButton;
+    @FXML
     private Button checkButton; //przycisk sprawdz
     @FXML
     private Button startButton; //przycisk rozpoczecia
@@ -37,7 +41,7 @@ public class GameController extends  MainMenuController{
     private final int maxGood;
     private int good = 0;
     private int bad = 0;
-    private long startTime;
+    private long startTime, time;
 
     public GameController(){
         PasswordSetter passwordSetter = new PasswordSetter();
@@ -145,10 +149,11 @@ public class GameController extends  MainMenuController{
             passwordLabel.setText("Wygrana! Hasło to: " + password);
             playAgainButton.setVisible(true);
             isGoodLabel.setTextFill(Color.valueOf("#0e9e40"));
-            long time = ((endTime -startTime)/1000);
+            time = ((endTime -startTime)/1000);
             isGoodLabel.setText(" twój czas: " + (int)time + " sekund. Gratulacje!");
-            DBConnector dbc = new DBConnector();
-            dbc.addScore("norbi", "was", 23);
+            saveScoreButton.setVisible(true);
+            saveScoreField.setVisible(true);
+
 
 
         }
@@ -162,6 +167,13 @@ public class GameController extends  MainMenuController{
             isGoodLabel.setTextFill(Color.valueOf("#b90a0a"));
             isGoodLabel.setText("Następnym razem się uda!");
         }
+    }
+    public void saveScore(){
+        String nickname = saveScoreField.getText();
+        DBConnector dbc = new DBConnector();
+        dbc.addScore(nickname, password, (int)time);
+        saveScoreField.setVisible(false);
+        saveScoreButton.setVisible(false);
     }
 
 

@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b10e50c5-96d4-4a85-9c72-80d6cf57d0fc" name="Changes" comment="dodanie klasy do zarzadzania baza danych, edycja gry">
+    <list default="true" id="b10e50c5-96d4-4a85-9c72-80d6cf57d0fc" name="Changes" comment="dodanie bazy danych - poprawka">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/DBConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/DBConnector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/passwords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/passwords.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/add-word-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/add-word-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/game-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/game-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/main-menu-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/main-menu-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +157,28 @@
       <option name="project" value="LOCAL" />
       <updated>1682445256934</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="dodanie bazy danych">
+      <created>1682449719179</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1682449719179</updated>
+    </task>
+    <task id="LOCAL-00016" summary="dodanie bazy danych">
+      <created>1682449739461</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1682449739461</updated>
+    </task>
+    <task id="LOCAL-00017" summary="dodanie bazy danych - poprawka">
+      <created>1682449933393</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1682449933393</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -167,6 +192,8 @@
     <MESSAGE value="dodano menu główne" />
     <MESSAGE value="dodano opcje dodania wlasnych wyrazów" />
     <MESSAGE value="dodanie klasy do zarzadzania baza danych, edycja gry" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodanie klasy do zarzadzania baza danych, edycja gry" />
+    <MESSAGE value="dodanie bazy danych" />
+    <MESSAGE value="dodanie bazy danych - poprawka" />
+    <option name="LAST_COMMIT_MESSAGE" value="dodanie bazy danych - poprawka" />
   </component>
 </project>
