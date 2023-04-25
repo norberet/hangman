@@ -31,12 +31,12 @@ public class HelloController {
     private String hiddenPass;
     private boolean importPassword = false;
     private StringBuilder visiblePassword = new StringBuilder();
-    private List<Character> usedLetter = new ArrayList<>();
-    private final int maxBad = 5;
+    private final List<Character> usedLetter = new ArrayList<>();
     private final int maxGood;
     private int good = 0;
     private int bad = 0;
-    private long startTime, endTime;
+    private long startTime;
+
     public HelloController(){
         PasswordSetter passwordSetter = new PasswordSetter();
         password = passwordSetter.getPassword();
@@ -87,7 +87,7 @@ public class HelloController {
             System.out.println(hiddenPassword);
             System.out.println(visiblePassword);
             importPassword = true;
-
+            //start();
         }
 
     }
@@ -134,25 +134,26 @@ public class HelloController {
             passwordLabel.setText(String.valueOf(hiddenPassword));
         }
         letterField.clear();
+        int maxBad = 5;
         if(good >= maxGood){
-            endTime = System.currentTimeMillis();
+            long endTime = System.currentTimeMillis();
             System.out.println("Wygrana");
             letterField.setEditable(false);
             checkButton.setVisible(false);
             passwordLabel.setText("Wygrana! Hasło to: " + password);
             playAgainButton.setVisible(true);
             isGoodLabel.setTextFill(Color.valueOf("#0e9e40"));
-            isGoodLabel.setText("Twój czas: " + ((endTime-startTime)/1000) + " sekund");
+            isGoodLabel.setText("Twój czas: " + ((endTime -startTime)/1000) + " sekund");
         }
         else if(bad >= maxBad){
-            endTime = System.currentTimeMillis();
+            //endTime = System.currentTimeMillis();
             System.out.println("Przegrana");
             letterField.setEditable(false);
             checkButton.setVisible(false);
             passwordLabel.setText("Przegrana! Hasło to: " + password);
             playAgainButton.setVisible(true);
             isGoodLabel.setTextFill(Color.valueOf("#b90a0a"));
-            isGoodLabel.setText("Koniec!");
+            isGoodLabel.setText("Następnym razem się uda!");
         }
     }
     public void playAgain(){
