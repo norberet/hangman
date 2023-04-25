@@ -18,4 +18,6 @@
    <Button fx:id="startButton" layoutX="312.0" layoutY="205.0" mnemonicParsing="false" onAction="#start" prefHeight="26.0" prefWidth="85.0" text="START" />
    <Button fx:id="playAgainButton" layoutX="312.0" layoutY="205.0" mnemonicParsing="false" onAction="#playAgain" text="Zagraj jeszcze raz!" visible="false" />
    <Label fx:id="isGoodLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="190.0" layoutY="240.0" prefHeight="17.0" prefWidth="210.0" />
+   <Label layoutX="263.0" layoutY="282.0" text="Użyte litery:" />
+   <Label fx:id="usedLetterLabel" alignment="TOP_CENTER" layoutX="149.0" layoutY="305.0" prefHeight="53.0" prefWidth="293.0" />
 </AnchorPane>

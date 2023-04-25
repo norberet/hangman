@@ -16,6 +16,8 @@ public class HelloController {
     @FXML
     private Label isGoodLabel;
     @FXML
+    private Label usedLetterLabel;
+    @FXML
     private TextField letterField; //wprowadzanie litery
     @FXML
     private Button checkButton; //przycisk sprawdz
@@ -34,6 +36,7 @@ public class HelloController {
     private final int maxGood;
     private int good = 0;
     private int bad = 0;
+    private long startTime, endTime;
     public HelloController(){
         PasswordSetter passwordSetter = new PasswordSetter();
         password = passwordSetter.getPassword();
@@ -91,6 +94,7 @@ public class HelloController {
     public void start(){
         if(importPassword){
             passwordLabel.setText(hiddenPass);
+            startTime = System.currentTimeMillis();
         }
         else {
             passwordLabel.setText("Error");
@@ -103,11 +107,14 @@ public class HelloController {
         char x = letterField.getText().toUpperCase().charAt(0); //pobieramy litere z pola i ustawiamy zmieniamy na wielka
         if(usedLetter.contains(x)){
             System.out.println("Już podałeś te litere"); //jesli ta litera juz sie pojawila to nie program nie idzie dalej
+            isGoodLabel.setTextFill(Color.valueOf("#dac04e")); //zmiana koloru
+            isGoodLabel.setText("Już podałeś tę literę!");
         }
         else {
             usedLetter.add(x);
             System.out.println(x);
             String a = Character.toString(x);
+            usedLetterLabel.setText(usedLetter.toString());
             System.out.println(password.contains(a));
             if (password.contains(a)) {
                 for (int i = 0; i < hiddenPassword.length(); i++) {
@@ -128,15 +135,17 @@ public class HelloController {
         }
         letterField.clear();
         if(good >= maxGood){
+            endTime = System.currentTimeMillis();
             System.out.println("Wygrana");
             letterField.setEditable(false);
             checkButton.setVisible(false);
             passwordLabel.setText("Wygrana! Hasło to: " + password);
             playAgainButton.setVisible(true);
             isGoodLabel.setTextFill(Color.valueOf("#0e9e40"));
-            isGoodLabel.setText("Koniec");
+            isGoodLabel.setText("Twój czas: " + ((endTime-startTime)/1000) + " sekund");
         }
         else if(bad >= maxBad){
+            endTime = System.currentTimeMillis();
             System.out.println("Przegrana");
             letterField.setEditable(false);
             checkButton.setVisible(false);
