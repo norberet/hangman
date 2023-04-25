@@ -161,10 +161,6 @@ public class GameController extends  MainMenuController{
     }
 
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     @Override
     public void mainMenu(ActionEvent event) throws IOException {
         super.mainMenu(event);
