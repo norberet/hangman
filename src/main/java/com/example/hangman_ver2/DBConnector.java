@@ -8,7 +8,7 @@ public class DBConnector {
     private final String URL = "jdbc:mysql://localhost:3306/hangman-game";
 
     public void addScore(String nickname, String word, int time){
-        String query = "INSERT INTO score (nickname, word, time) VALUES ('"+ nickname + "', " + word +"', " + time + "');";
+        String query = "INSERT INTO score (nickname, word, time) VALUES ('"+ nickname + "', '" + word +"', '" + time + "');";
         try{
             Connection connection = DriverManager.getConnection(URL,username,password);
             Statement statement = connection.createStatement();
