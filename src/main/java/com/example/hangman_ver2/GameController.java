@@ -145,7 +145,12 @@ public class GameController extends  MainMenuController{
             passwordLabel.setText("Wygrana! Hasło to: " + password);
             playAgainButton.setVisible(true);
             isGoodLabel.setTextFill(Color.valueOf("#0e9e40"));
-            isGoodLabel.setText(" twój czas: " + ((endTime -startTime)/1000) + " sekund. Gratulacje!");
+            long time = ((endTime -startTime)/1000);
+            isGoodLabel.setText(" twój czas: " + (int)time + " sekund. Gratulacje!");
+            DBConnector dbc = new DBConnector();
+            dbc.addScore("norbi", "was", 23);
+
+
         }
         else if(bad >= maxBad){
             //endTime = System.currentTimeMillis();

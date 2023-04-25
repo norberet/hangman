@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b10e50c5-96d4-4a85-9c72-80d6cf57d0fc" name="Changes" comment="dodano opcje dodania wlasnych wyrazów">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/DBConnector.java" afterDir="false" />
+    <list default="true" id="b10e50c5-96d4-4a85-9c72-80d6cf57d0fc" name="Changes" comment="dodanie klasy do zarzadzania baza danych, edycja gry">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/DBConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/DBConnector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/MainMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/PasswordSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/PasswordSetter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/passwords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/passwords.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/add-word-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/add-word-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/game-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/game-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/main-menu-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/main-menu-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +132,28 @@
       <option name="project" value="LOCAL" />
       <updated>1682441183766</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="dodanie klasy do zarzadzania baza danych, edycja gry">
+      <created>1682445171902</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1682445171902</updated>
+    </task>
+    <task id="LOCAL-00013" summary="dodanie klasy do zarzadzania baza danych, edycja gry">
+      <created>1682445188927</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1682445188927</updated>
+    </task>
+    <task id="LOCAL-00014" summary="dodanie klasy do zarzadzania baza danych, edycja gry">
+      <created>1682445256934</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1682445256934</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -150,6 +166,7 @@
     <MESSAGE value="dodano licznik czasu" />
     <MESSAGE value="dodano menu główne" />
     <MESSAGE value="dodano opcje dodania wlasnych wyrazów" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodano opcje dodania wlasnych wyrazów" />
+    <MESSAGE value="dodanie klasy do zarzadzania baza danych, edycja gry" />
+    <option name="LAST_COMMIT_MESSAGE" value="dodanie klasy do zarzadzania baza danych, edycja gry" />
   </component>
 </project>
