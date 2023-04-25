@@ -38,7 +38,6 @@ public class GameController extends  MainMenuController{
     private int good = 0;
     private int bad = 0;
     private long startTime;
-    private String name;
 
     public GameController(){
         PasswordSetter passwordSetter = new PasswordSetter();
@@ -146,7 +145,7 @@ public class GameController extends  MainMenuController{
             passwordLabel.setText("Wygrana! Hasło to: " + password);
             playAgainButton.setVisible(true);
             isGoodLabel.setTextFill(Color.valueOf("#0e9e40"));
-            isGoodLabel.setText(name + " twój czas: " + ((endTime -startTime)/1000) + " sekund. Gratulacje!");
+            isGoodLabel.setText(" twój czas: " + ((endTime -startTime)/1000) + " sekund. Gratulacje!");
         }
         else if(bad >= maxBad){
             //endTime = System.currentTimeMillis();
