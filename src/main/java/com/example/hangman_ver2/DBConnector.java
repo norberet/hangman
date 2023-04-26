@@ -22,19 +22,15 @@ public class DBConnector{
             statement.executeUpdate(query);
             statement.close();
             connection.close();
+            System.out.println("Zapisano");
         }catch (SQLException e){
             System.out.println("Bład SQL");
             e.printStackTrace();
         }
     }
-    public void printScores(boolean sort){
-        String query;
-        if(sort){
-            query = "SELECT * FROM score ORDER BY time";
-        }
-        else{
-            query = "SELECT * FROM score ORDER BY word DESC";
-        }
+    public void printScores(){
+
+        String query = "SELECT * FROM score ORDER BY time";
 
         try{
             Connection connection = DriverManager.getConnection(URL,username,password);
@@ -47,7 +43,7 @@ public class DBConnector{
                 time.add(resultSet.getInt("time"));
             }
             for (Integer integer : time) { //zmieniam int na stringa i ustawiam czas w formacie 00:00 dla kazdego indexu listy
-                timeS.add(integer % 60 + ":" + (integer - (integer % 60) * 60) + ".");
+                timeS.add(integer / 60 + ":" + (integer - (integer / 60) * 60));
             }
             resultSet.close();
             statement.close();

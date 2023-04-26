@@ -5,7 +5,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class ScoreTableController extends MainMenuController{
@@ -18,21 +17,19 @@ public class ScoreTableController extends MainMenuController{
     @FXML
     private Label timeLabel;
 
-    private DBConnector connector = new DBConnector();
+    private final DBConnector connector = new DBConnector();
     public ScoreTableController(){
 
     }
     public void showScores(){
-        connector.printScores(true);
+        connector.printScores();
         placeLabel.setText("1.\n2.\n3.\n4.\n5.\n6.\n7.\n8.\n9.\n10.\n11.\n12.\n13.\n14.\n15.");
         List<String> nicknames = connector.getNickname();
         nameLabel.setText(getValues(nicknames));
         List<String> words = connector.getWord();
         wordLabel.setText(getValues(words));
         List<String> time = connector.getTime();
-
-
-
+        timeLabel.setText(getValues(time));
     }
     public String getValues(List<String> value){ //zwraca nicknames oraz word
         StringBuilder values = new StringBuilder();
@@ -44,7 +41,6 @@ public class ScoreTableController extends MainMenuController{
         }
         return String.valueOf(values);
     }
-
 
     @Override
     public void mainMenu(ActionEvent event) throws IOException {

@@ -43,7 +43,6 @@
             <Font size="21.0" />
          </font>
       </Label>
-      <Button layoutX="658.0" layoutY="48.0" mnemonicParsing="false" onAction="#showScores" text="Button" />
       <Label fx:id="nameLabel" alignment="TOP_CENTER" contentDisplay="TOP" layoutX="153.0" layoutY="161.0" prefHeight="443.0" prefWidth="147.0" textOverrun="CLIP">
          <font>
             <Font size="20.0" />

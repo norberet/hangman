@@ -174,6 +174,7 @@ public class GameController extends  MainMenuController{
         dbc.addScore(nickname, password, (int)time);
         saveScoreField.setVisible(false);
         saveScoreButton.setVisible(false);
+        isGoodLabel.setText("Pomyślnie zapisano wynik!");
     }
 
 
