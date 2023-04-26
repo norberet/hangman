@@ -27,7 +27,7 @@ public class PasswordSetter extends MainMenuController{
             Scanner input = new Scanner(reader);
             password = new ArrayList<>();
             while (input.hasNext()){
-                password.add(input.nextLine().toUpperCase());
+                password.add(input.nextLine().toUpperCase()); //wczytywanie wszystkich hasel z pliku txt do listy
             } //otwarcie pliku oraz wczytanie hasel do listy
             reader.close();
 
@@ -38,16 +38,16 @@ public class PasswordSetter extends MainMenuController{
 
         }
         int index = (int)(Math.random()* password.size()); //wybieranie losoewgo slowa z listy
-        System.out.println(password.get(index));
+        System.out.println(password.get(index)); //print losowego hasla
         //System.out.println(password);
-        return password.get(index);
+        return password.get(index); //zwracamy haslo (do gameController)
     }
-    public void addWordtoFile(){
+    public void addWordtoFile(){ //dodawnia hasla do pliku
         System.out.println(addWordField.getText());
         String newWord = addWordField.getText();
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter(file,true));
-            writer.write(newWord);
+            writer.write(newWord); //zapis slowa
             writer.newLine();
             writer.close();
             isSuccess.setTextFill(Color.valueOf("#0e9e40"));
@@ -58,7 +58,7 @@ public class PasswordSetter extends MainMenuController{
             isSuccess.setTextFill(Color.valueOf("#b90a0a"));
             isSuccess.setText("Błąd");
         }
-        addWordField.clear();
+        addWordField.clear(); //czyscimy komórke
     }
 
     @Override

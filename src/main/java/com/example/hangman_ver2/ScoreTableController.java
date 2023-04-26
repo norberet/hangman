@@ -18,14 +18,12 @@ public class ScoreTableController extends MainMenuController{
     private Label timeLabel;
 
     private final DBConnector connector = new DBConnector();
-    public ScoreTableController(){
 
-    }
     public void showScores(){
         connector.printScores();
-        placeLabel.setText("1.\n2.\n3.\n4.\n5.\n6.\n7.\n8.\n9.\n10.\n11.\n12.\n13.\n14.\n15.");
+        placeLabel.setText("1.\n2.\n3.\n4.\n5.\n6.\n7.\n8.\n9.\n10.\n11.\n12.\n13.\n14.\n15."); //miesci sie 15 rekordow
         List<String> nicknames = connector.getNickname();
-        nameLabel.setText(getValues(nicknames));
+        nameLabel.setText(getValues(nicknames)); //drukujemy wyniki
         List<String> words = connector.getWord();
         wordLabel.setText(getValues(words));
         List<String> time = connector.getTime();
@@ -37,7 +35,7 @@ public class ScoreTableController extends MainMenuController{
             values.append(s).append("\n");
         }
         if(value.size() < 15){
-            values.append("<brak>\n".repeat(15 - (value.size() - 1)));
+            values.append("<brak>\n".repeat(15 - (value.size() - 1))); //jesli nie ma wyniku drukujemy stosowna informacje
         }
         return String.valueOf(values);
     }

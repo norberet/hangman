@@ -14,7 +14,7 @@ public class DBConnector{
     private final List<Integer> time = new ArrayList<>();
     private final List<String> timeS = new ArrayList<>();
 
-    public void addScore(String nickname, String word, int time){
+    public void addScore(String nickname, String word, int time){ //zapisywanie wynikow do bazy danych
         String query = "INSERT INTO score (nickname, word, time) VALUES ('"+ nickname + "', '" + word +"', '" + time + "');";
         try{
             Connection connection = DriverManager.getConnection(URL,username,password);
@@ -28,7 +28,7 @@ public class DBConnector{
             e.printStackTrace();
         }
     }
-    public void printScores(){
+    public void printScores(){ //wyswietlanie wyników
 
         String query = "SELECT * FROM score ORDER BY time";
 

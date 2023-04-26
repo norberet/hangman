@@ -34,7 +34,7 @@ public class GameController extends  MainMenuController{
     @FXML
     private Button playAgainButton; //przycisk ponownej gry
     @FXML
-    ImageView imageView ;
+    ImageView imageView ; //wyswietla obrazki wisielca
     Image image0 = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/images/0.png")));
     Image image1 = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/images/1.png")));
     Image image2 = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/images/2.png")));
@@ -45,17 +45,17 @@ public class GameController extends  MainMenuController{
     Image image7 = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/images/7.png")));
     Image image8 = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/images/8.png")));
     Image image9 = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/images/9.png")));
-
-    private final String password;
-    private final StringBuilder hiddenPassword = new StringBuilder();
+    // obrazki
+    private final String password; //haslo
+    private final StringBuilder hiddenPassword = new StringBuilder(); //ukryte haslo do wyswietlania userowi
     private String hiddenPass;
-    private boolean importPassword = false;
-    private final StringBuilder visiblePassword = new StringBuilder();
-    private final List<Character> usedLetter = new ArrayList<>();
-    private final int maxGood;
+    private boolean importPassword = false; //okresla poprawnosc zczytania hasla
+    private final StringBuilder visiblePassword = new StringBuilder(); //do porównywania haseł
+    private final List<Character> usedLetter = new ArrayList<>(); //uzyte znaki
+    private final int maxGood; //liczba znakow
     private int good = 0;
-    private int bad = 0;
-    private long startTime, time;
+    private int bad = 0; //liczniki dobrych i zlych odpo
+    private long startTime, time; //licnzik czasu
 
     public GameController(){
         PasswordSetter passwordSetter = new PasswordSetter();
@@ -106,26 +106,26 @@ public class GameController extends  MainMenuController{
             hiddenPass = String.valueOf(hiddenPassword);
             System.out.println(hiddenPassword);
             System.out.println(visiblePassword);
-            importPassword = true;
+            importPassword = true; //informujemy ze operacja sie udala
             //start();
         }
 
     }
     public void start(){
         if(importPassword){
-            passwordLabel.setText(hiddenPass);
-            startTime = System.currentTimeMillis();
+            passwordLabel.setText(hiddenPass); //przekazanie hasla na ekran
+            startTime = System.currentTimeMillis(); //jesli haslo jest wczytane po nacisnieciu start uruchamiamy gre i liczymy czas
         }
         else {
             passwordLabel.setText("Error");
         }
-        startButton.setVisible(false);
-        letterField.setEditable(true);
-        checkButton.setVisible(true);
+        startButton.setVisible(false); //ukrywamy przycisk start
+        letterField.setEditable(true); //wlaczmy mozliwość edycji
+        checkButton.setVisible(true); //pokazuje przycisk do sprawdzenia
         setImage(0);
 
     }
-    public void checkLetter(){
+    public void checkLetter(){ //sprawdzanie hasla
         char x = letterField.getText().toUpperCase().charAt(0); //pobieramy litere z pola i ustawiamy zmieniamy na wielka
         if(usedLetter.contains(x)){
             System.out.println("Już podałeś te litere"); //jesli ta litera juz sie pojawila to nie program nie idzie dalej
@@ -133,17 +133,17 @@ public class GameController extends  MainMenuController{
             isGoodLabel.setText("Już podałeś tę literę!");
         }
         else {
-            usedLetter.add(x);
-            System.out.println(x);
+            usedLetter.add(x); //jesli litery jeszcze nie było to dodajemy do zbioru
+            System.out.println(x); //drukowanie w konsoli w celu sprawdzania poprawnosci dzialania
             String a = Character.toString(x);
-            usedLetterLabel.setText(usedLetter.toString());
+            usedLetterLabel.setText(usedLetter.toString()); //w czasie rzeczywistym wyswietlamy uzyte litery
             System.out.println(password.contains(a));
             if (password.contains(a)) {
                 for (int i = 0; i < hiddenPassword.length(); i++) {
                     if (x == visiblePassword.charAt(i)) {
                         hiddenPassword.deleteCharAt(i);
                         hiddenPassword.insert(i, x);
-                        good++;
+                        good++; //jesli litera jest poprawna edytujemy hiddenPassword i wyswietlamy aktualizacje
                         isGoodLabel.setTextFill(Color.valueOf("#0e9e40"));
                         isGoodLabel.setText("Poprawna litera!");
                     }
@@ -152,24 +152,24 @@ public class GameController extends  MainMenuController{
                 bad++;
                 isGoodLabel.setTextFill(Color.valueOf("#b90a0a"));
                 isGoodLabel.setText("Niepoprawna litera!");
-                setImage(bad);
+                setImage(bad); //jesli nie to liczymy bledy i wyswietlamy obrazek wraz z komunikatem
             }
             passwordLabel.setText(String.valueOf(hiddenPassword));
         }
-        letterField.clear();
-        final int maxBad = 9;
+        letterField.clear(); //po kazdym podaniu litery czyscimy okno
+        final int maxBad = 9; // maksymalna ilosc bledow
         if(good >= maxGood){
             long endTime = System.currentTimeMillis();
             System.out.println("Wygrana");
             letterField.setEditable(false);
             checkButton.setVisible(false);
             passwordLabel.setText("Wygrana! Hasło to: " + password);
-            playAgainButton.setVisible(true);
+            playAgainButton.setVisible(true); //"Zagraj jeszcze raz"
             isGoodLabel.setTextFill(Color.valueOf("#0e9e40"));
             time = ((endTime -startTime)/1000);
             isGoodLabel.setText(" twój czas: " + (int)time + " sekund. Gratulacje!");
             saveScoreButton.setVisible(true);
-            saveScoreField.setVisible(true);
+            saveScoreField.setVisible(true); //pojawia sie okienko do zapisania wyniku
 
 
 
@@ -180,12 +180,12 @@ public class GameController extends  MainMenuController{
             letterField.setEditable(false);
             checkButton.setVisible(false);
             passwordLabel.setText("Przegrana! Hasło to: " + password);
-            playAgainButton.setVisible(true);
+            playAgainButton.setVisible(true); // "Zagraj jeszcze raz"
             isGoodLabel.setTextFill(Color.valueOf("#b90a0a"));
-            isGoodLabel.setText("Następnym razem się uda!");
+            isGoodLabel.setText("Następnym razem się uda!"); //informacja zwrotna po przegranej
         }
     }
-    public void setImage(int a){
+    public void setImage(int a){ //wyswietlanie odpowiednich obrazkow
         if(a == 0){
             imageView.setImage(image0);
         }else if (a == 1) {
@@ -212,10 +212,10 @@ public class GameController extends  MainMenuController{
     public void saveScore(){
         String nickname = saveScoreField.getText();
         DBConnector dbc = new DBConnector();
-        dbc.addScore(nickname, password, (int)time);
+        dbc.addScore(nickname, password, (int)time); //przekaznie informacji do bazy danych
         saveScoreField.setVisible(false);
         saveScoreButton.setVisible(false);
-        isGoodLabel.setText("Pomyślnie zapisano wynik!");
+        isGoodLabel.setText("Pomyślnie zapisano wynik!"); //zapisywanie wyniku
     }
 
 

@@ -23,7 +23,7 @@ public class MainMenuController {
         stage.setTitle("Wisielec");
         stage.show();
     }
-    public void newGame(ActionEvent event) throws IOException {
+    public void newGame(ActionEvent event) throws IOException { //nowa gra
         FXMLLoader fxmlLoader = new FXMLLoader(HangmanGame.class.getResource("game-view.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(fxmlLoader.load());
@@ -31,7 +31,7 @@ public class MainMenuController {
         stage.setTitle("Wisielec");
         stage.show();
     }
-    public void addWord(ActionEvent event) throws IOException {
+    public void addWord(ActionEvent event) throws IOException { //dodawanie nowego slowa
         FXMLLoader fxmlLoader = new FXMLLoader(HangmanGame.class.getResource("add-word-view.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(fxmlLoader.load());
@@ -39,7 +39,7 @@ public class MainMenuController {
         stage.setTitle("Wisielec");
         stage.show();
     }
-    public void scoreTable(ActionEvent event) throws IOException {
+    public void scoreTable(ActionEvent event) throws IOException { //tablica wynikow
         FXMLLoader fxmlLoader = new FXMLLoader(HangmanGame.class.getResource("score-table-view.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(fxmlLoader.load());
@@ -50,7 +50,7 @@ public class MainMenuController {
         stage.show();
     }
     public void exit(){
-        Platform.exit();
+        Platform.exit(); //konczy program
     }
 
 
