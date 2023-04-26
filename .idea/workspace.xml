@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b10e50c5-96d4-4a85-9c72-80d6cf57d0fc" name="Changes" comment="dodanie bazy danych - poprawka">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/DBConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/DBConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/passwords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/passwords.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/add-word-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/add-word-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/game-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/game-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/main-menu-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/main-menu-view.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="b10e50c5-96d4-4a85-9c72-80d6cf57d0fc" name="Changes" comment="dzialająca gra - bez sprawdzania rankingu i grafiki" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -178,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682449933393</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="dzialająca gra - bez sprawdzania rankingu i grafiki">
+      <created>1682452349105</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1682452349105</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -194,6 +192,7 @@
     <MESSAGE value="dodanie klasy do zarzadzania baza danych, edycja gry" />
     <MESSAGE value="dodanie bazy danych" />
     <MESSAGE value="dodanie bazy danych - poprawka" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodanie bazy danych - poprawka" />
+    <MESSAGE value="dzialająca gra - bez sprawdzania rankingu i grafiki" />
+    <option name="LAST_COMMIT_MESSAGE" value="dzialająca gra - bez sprawdzania rankingu i grafiki" />
   </component>
 </project>

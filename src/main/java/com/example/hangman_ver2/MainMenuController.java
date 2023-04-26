@@ -15,7 +15,7 @@ public class MainMenuController {
 
 
     public void mainMenu(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("main-menu-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HangmanGame.class.getResource("main-menu-view.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
@@ -23,7 +23,7 @@ public class MainMenuController {
         stage.show();
     }
     public void newGame(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("game-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HangmanGame.class.getResource("game-view.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
@@ -31,7 +31,7 @@ public class MainMenuController {
         stage.show();
     }
     public void addWord(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("add-word-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HangmanGame.class.getResource("add-word-view.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);

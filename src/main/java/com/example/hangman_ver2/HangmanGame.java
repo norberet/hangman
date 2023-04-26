@@ -6,10 +6,10 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class HangmanGame extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("main-menu-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HangmanGame.class.getResource("main-menu-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.setTitle("Wisielec");
