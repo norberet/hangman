@@ -38,6 +38,8 @@ public class GameController extends  MainMenuController{
     @FXML
     List<Image> images;
 
+    private ImageController imageController = new ImageController();
+
     private final String password;
     private final StringBuilder hiddenPassword = new StringBuilder();
     private String hiddenPass;
@@ -114,7 +116,8 @@ public class GameController extends  MainMenuController{
         startButton.setVisible(false);
         letterField.setEditable(true);
         checkButton.setVisible(true);
-
+        images = imageController.loadImages();
+        imageView.setImage(images.get(0));
     }
     public void checkLetter(){
         char x = letterField.getText().toUpperCase().charAt(0); //pobieramy litere z pola i ustawiamy zmieniamy na wielka

@@ -4,25 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b10e50c5-96d4-4a85-9c72-80d6cf57d0fc" name="Changes" comment="prawie skonczona gra">
-      <change afterPath="$PROJECT_DIR$/images/view/main-background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/ImageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/view/main-background.png" afterDir="false" />
+    <list default="true" id="b10e50c5-96d4-4a85-9c72-80d6cf57d0fc" name="Changes" comment="dodanie tla w menu i imageview w grze">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/MainMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/game-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/game-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/main-menu-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/main-menu-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/ImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/ImageController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682507653090</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="dodanie tla w menu i imageview w grze">
+      <created>1682516452477</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1682516452477</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -248,6 +240,7 @@
     <MESSAGE value="dodanie tabeli" />
     <MESSAGE value="dodanie tabeli i czesc rekordow" />
     <MESSAGE value="prawie skonczona gra" />
-    <option name="LAST_COMMIT_MESSAGE" value="prawie skonczona gra" />
+    <MESSAGE value="dodanie tla w menu i imageview w grze" />
+    <option name="LAST_COMMIT_MESSAGE" value="dodanie tla w menu i imageview w grze" />
   </component>
 </project>
