@@ -35,10 +35,16 @@ public class GameController extends  MainMenuController{
     private Button playAgainButton; //przycisk ponownej gry
     @FXML
     ImageView imageView ;
-    @FXML
-    List<Image> images;
-
-    private ImageController imageController = new ImageController();
+    Image image0 = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/images/0.png")));
+    Image image1 = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/images/1.png")));
+    Image image2 = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/images/2.png")));
+    Image image3 = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/images/3.png")));
+    Image image4 = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/images/4.png")));
+    Image image5 = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/images/5.png")));
+    Image image6 = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/images/6.png")));
+    Image image7 = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/images/7.png")));
+    Image image8 = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/images/8.png")));
+    Image image9 = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/images/9.png")));
 
     private final String password;
     private final StringBuilder hiddenPassword = new StringBuilder();
@@ -116,8 +122,8 @@ public class GameController extends  MainMenuController{
         startButton.setVisible(false);
         letterField.setEditable(true);
         checkButton.setVisible(true);
-        images = imageController.loadImages();
-        imageView.setImage(images.get(0));
+        setImage(0);
+
     }
     public void checkLetter(){
         char x = letterField.getText().toUpperCase().charAt(0); //pobieramy litere z pola i ustawiamy zmieniamy na wielka
@@ -146,11 +152,12 @@ public class GameController extends  MainMenuController{
                 bad++;
                 isGoodLabel.setTextFill(Color.valueOf("#b90a0a"));
                 isGoodLabel.setText("Niepoprawna litera!");
+                setImage(bad);
             }
             passwordLabel.setText(String.valueOf(hiddenPassword));
         }
         letterField.clear();
-        int maxBad = 5;
+        final int maxBad = 9;
         if(good >= maxGood){
             long endTime = System.currentTimeMillis();
             System.out.println("Wygrana");
@@ -177,6 +184,30 @@ public class GameController extends  MainMenuController{
             isGoodLabel.setTextFill(Color.valueOf("#b90a0a"));
             isGoodLabel.setText("Następnym razem się uda!");
         }
+    }
+    public void setImage(int a){
+        if(a == 0){
+            imageView.setImage(image0);
+        }else if (a == 1) {
+            imageView.setImage(image1);
+        }else if (a == 2) {
+            imageView.setImage(image2);
+        }else if (a == 3) {
+            imageView.setImage(image3);
+        }else if (a == 4) {
+            imageView.setImage(image4);
+        }else if (a == 5) {
+            imageView.setImage(image5);
+        }else if (a == 6) {
+            imageView.setImage(image6);
+        }else if (a == 7) {
+            imageView.setImage(image7);
+        }else if (a == 8) {
+            imageView.setImage(image8);
+        }else if (a == 9) {
+            imageView.setImage(image9);
+        }
+
     }
     public void saveScore(){
         String nickname = saveScoreField.getText();
