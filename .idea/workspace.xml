@@ -4,12 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b10e50c5-96d4-4a85-9c72-80d6cf57d0fc" name="Changes" comment="dodanie tabeli i czesc rekordow">
+    <list default="true" id="b10e50c5-96d4-4a85-9c72-80d6cf57d0fc" name="Changes" comment="prawie skonczona gra">
+      <change afterPath="$PROJECT_DIR$/images/view/main-background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/ImageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/view/main-background.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/DBConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/DBConnector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/ScoreTableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/ScoreTableController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/score-table-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/score-table-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/MainMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/game-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/game-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/main-menu-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/main-menu-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,18 +48,21 @@
     </option>
   </component>
   <component name="ProjectId" id="2Ornh3WYr5bSeXABplCg2xxXxkg" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;/Users/norbertsaja/IdeaProjects/hangman_ver2/src/main/resources/com/example/hangman_ver2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_directory_selection": "/Users/norbertsaja/IdeaProjects/hangman_ver2/src/main/resources/com/example/hangman_ver2"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -203,10 +219,18 @@
       <option name="project" value="LOCAL" />
       <updated>1682505828852</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="prawie skonczona gra">
+      <created>1682507653090</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1682507653090</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Szkielet ekranu gry" />
     <MESSAGE value="Szkielet ekranu gry z kilkoma nowosciami" />
     <MESSAGE value="dzialajaca gra-prawie" />
@@ -223,6 +247,7 @@
     <MESSAGE value="zmiana nazw" />
     <MESSAGE value="dodanie tabeli" />
     <MESSAGE value="dodanie tabeli i czesc rekordow" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodanie tabeli i czesc rekordow" />
+    <MESSAGE value="prawie skonczona gra" />
+    <option name="LAST_COMMIT_MESSAGE" value="prawie skonczona gra" />
   </component>
 </project>

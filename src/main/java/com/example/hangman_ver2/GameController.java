@@ -5,6 +5,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 
 import java.io.IOException;
@@ -31,6 +33,10 @@ public class GameController extends  MainMenuController{
     private Button startButton; //przycisk rozpoczecia
     @FXML
     private Button playAgainButton; //przycisk ponownej gry
+    @FXML
+    ImageView imageView ;
+    @FXML
+    List<Image> images;
 
     private final String password;
     private final StringBuilder hiddenPassword = new StringBuilder();
@@ -108,6 +114,7 @@ public class GameController extends  MainMenuController{
         startButton.setVisible(false);
         letterField.setEditable(true);
         checkButton.setVisible(true);
+
     }
     public void checkLetter(){
         char x = letterField.getText().toUpperCase().charAt(0); //pobieramy litere z pola i ustawiamy zmieniamy na wielka
