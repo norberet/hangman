@@ -4,7 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DBConnector{
+/*
+    **BAZA DANYCH URUCHOMIONA LOKALNIE**
+    * NIE UDOSTĘPNIŁEM JEJ NA GITHUBIE *
+    W BAZIE DANYCH JEST TABELA SCORE A W NIEJ KOLUMNY
+    id INT PK NN AI
+    nickname VARCHAR(45)
+    word VARCHAR(45)
+    time INT(255)
+    * Wystarczy utworzyc lokalnie baze danych o podanych parametrach *
 
+ */
     private final String username = "root";
     private final String password = "12345678";
     private final String URL = "jdbc:mysql://localhost:3306/hangman-game";

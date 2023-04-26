@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b10e50c5-96d4-4a85-9c72-80d6cf57d0fc" name="Changes" comment="W pełni działająca gra">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b10e50c5-96d4-4a85-9c72-80d6cf57d0fc" name="Changes" comment="W pełni działająca gra - dodano komentarze">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/DBConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/DBConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/MainMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/PasswordSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/PasswordSetter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/ScoreTableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/ScoreTableController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682523194448</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="W pełni działająca gra - dodano komentarze">
+      <created>1682524569339</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1682524569339</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -289,6 +291,7 @@
     <MESSAGE value="dodano zdjecia wisielca" />
     <MESSAGE value="dzialajaca gra z obrazkami" />
     <MESSAGE value="W pełni działająca gra" />
-    <option name="LAST_COMMIT_MESSAGE" value="W pełni działająca gra" />
+    <MESSAGE value="W pełni działająca gra - dodano komentarze" />
+    <option name="LAST_COMMIT_MESSAGE" value="W pełni działająca gra - dodano komentarze" />
   </component>
 </project>
