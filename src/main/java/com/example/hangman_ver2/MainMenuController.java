@@ -38,6 +38,16 @@ public class MainMenuController {
         stage.setTitle("Wisielec");
         stage.show();
     }
+    public void scoreTable(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HangmanGame.class.getResource("score-table-view.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+        stage.setTitle("Wisielec");
+        ScoreTableController scoreTableController = fxmlLoader.getController();
+        scoreTableController.showScores();
+        stage.show();
+    }
 
 
 }

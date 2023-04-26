@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b10e50c5-96d4-4a85-9c72-80d6cf57d0fc" name="Changes" comment="dzialająca gra - bez sprawdzania rankingu i grafiki" />
+    <list default="true" id="b10e50c5-96d4-4a85-9c72-80d6cf57d0fc" name="Changes" comment="zmiana nazw">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/DBConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/DBConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/MainMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/ScoreTableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/ScoreTableController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/main-menu-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/main-menu-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/score-table-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/score-table-view.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,13 +41,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_directory_selection": "/Users/norbertsaja/IdeaProjects/hangman_ver2/src/main/resources/com/example/hangman_ver2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;/Users/norbertsaja/IdeaProjects/hangman_ver2/src/main/resources/com/example/hangman_ver2&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -176,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682452349105</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="zmiana nazw">
+      <created>1682500509151</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1682500509151</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -193,6 +207,7 @@
     <MESSAGE value="dodanie bazy danych" />
     <MESSAGE value="dodanie bazy danych - poprawka" />
     <MESSAGE value="dzialająca gra - bez sprawdzania rankingu i grafiki" />
-    <option name="LAST_COMMIT_MESSAGE" value="dzialająca gra - bez sprawdzania rankingu i grafiki" />
+    <MESSAGE value="zmiana nazw" />
+    <option name="LAST_COMMIT_MESSAGE" value="zmiana nazw" />
   </component>
 </project>

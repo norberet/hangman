@@ -5,7 +5,7 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hangman_ver2.MainMenuController">
    <Button layoutX="37.0" layoutY="236.0" mnemonicParsing="false" onAction="#newGame" prefHeight="26.0" prefWidth="125.0" text="Nowa Gra" />
-   <Button layoutX="37.0" layoutY="271.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="125.0" text="Ranking" />
+   <Button layoutX="37.0" layoutY="271.0" mnemonicParsing="false" onAction="#scoreTable" prefHeight="26.0" prefWidth="125.0" text="Ranking" />
    <Button layoutX="37.0" layoutY="304.0" mnemonicParsing="false" onAction="#addWord" text="Dodaj wlasne slowo" />
    <Button layoutX="37.0" layoutY="339.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="125.0" text="Wyjscie" />
 </AnchorPane>
