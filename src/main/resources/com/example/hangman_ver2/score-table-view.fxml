@@ -6,7 +6,6 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hangman_ver2.ScoreTableController">
    <children>
       <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#mainMenu" text="Button" />
@@ -31,7 +30,7 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="660.0" layoutY="134.0" text="CZAS">
+      <Label layoutX="686.0" layoutY="134.0" text="CZAS">
          <font>
             <Font size="20.0" />
          </font>
@@ -45,5 +44,20 @@
          </font>
       </Label>
       <Button layoutX="658.0" layoutY="48.0" mnemonicParsing="false" onAction="#showScores" text="Button" />
+      <Label fx:id="nameLabel" alignment="TOP_CENTER" contentDisplay="TOP" layoutX="153.0" layoutY="161.0" prefHeight="443.0" prefWidth="147.0" textOverrun="CLIP">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="wordLabel" alignment="TOP_CENTER" contentDisplay="TOP" layoutX="312.0" layoutY="161.0" prefHeight="443.0" prefWidth="298.0" textOverrun="CLIP">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeLabel" alignment="TOP_CENTER" contentDisplay="TOP" layoutX="623.0" layoutY="161.0" prefHeight="443.0" prefWidth="171.0" textOverrun="CLIP">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

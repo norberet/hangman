@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b10e50c5-96d4-4a85-9c72-80d6cf57d0fc" name="Changes" comment="zmiana nazw">
+    <list default="true" id="b10e50c5-96d4-4a85-9c72-80d6cf57d0fc" name="Changes" comment="dodanie tabeli">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/DBConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/DBConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/MainMenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/ScoreTableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/ScoreTableController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/main-menu-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/main-menu-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/score-table-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hangman_ver2/score-table-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -190,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682500509151</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="dodanie tabeli">
+      <created>1682503802163</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1682503802163</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -208,6 +213,7 @@
     <MESSAGE value="dodanie bazy danych - poprawka" />
     <MESSAGE value="dzialająca gra - bez sprawdzania rankingu i grafiki" />
     <MESSAGE value="zmiana nazw" />
-    <option name="LAST_COMMIT_MESSAGE" value="zmiana nazw" />
+    <MESSAGE value="dodanie tabeli" />
+    <option name="LAST_COMMIT_MESSAGE" value="dodanie tabeli" />
   </component>
 </project>

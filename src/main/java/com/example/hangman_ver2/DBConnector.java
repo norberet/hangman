@@ -8,10 +8,11 @@ public class DBConnector{
     private final String username = "root";
     private final String password = "12345678";
     private final String URL = "jdbc:mysql://localhost:3306/hangman-game";
-    private List<Integer> id = new ArrayList<>();
-    private List<String> nickname = new ArrayList<>();
-    private List<String> word = new ArrayList<>();
-    private List<Integer> time = new ArrayList<>();
+    //private final List<Integer> id = new ArrayList<>();
+    private final List<String> nickname = new ArrayList<>();
+    private final List<String> word = new ArrayList<>();
+    private final List<Integer> time = new ArrayList<>();
+    private final List<String> timeS = new ArrayList<>();
 
     public void addScore(String nickname, String word, int time){
         String query = "INSERT INTO score (nickname, word, time) VALUES ('"+ nickname + "', '" + word +"', '" + time + "');";
@@ -40,10 +41,13 @@ public class DBConnector{
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(query);
             while (resultSet.next()) {
-                id.add(resultSet.getInt("id"));
+                //id.add(resultSet.getInt("id"));
                 nickname.add(resultSet.getString("nickname"));
                 word.add(resultSet.getString("word"));
                 time.add(resultSet.getInt("time"));
+            }
+            for (Integer integer : time) { //zmieniam int na stringa i ustawiam czas w formacie 00:00 dla kazdego indexu listy
+                timeS.add(integer % 60 + ":" + (integer - (integer % 60) * 60) + ".");
             }
             resultSet.close();
             statement.close();
@@ -63,7 +67,7 @@ public class DBConnector{
         return word;
     }
 
-    public List<Integer> getTime() {
-        return time;
+    public List<String> getTime() {
+        return timeS;
     }
 }
