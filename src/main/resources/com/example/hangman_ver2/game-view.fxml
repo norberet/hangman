@@ -22,7 +22,6 @@
    <Label fx:id="isGoodLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="295.0" layoutY="446.0" prefHeight="17.0" prefWidth="210.0" />
    <Label layoutX="368.0" layoutY="487.0" text="Użyte litery:" />
    <Label fx:id="usedLetterLabel" alignment="TOP_CENTER" layoutX="251.0" layoutY="520.0" prefHeight="53.0" prefWidth="293.0" />
-   <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#mainMenu" text="&lt; MENU" />
    <TextField fx:id="saveScoreField" alignment="CENTER" layoutX="596.0" layoutY="400.0" onAction="#saveScore" promptText="Podaj swoje imie" visible="false" />
    <Button fx:id="saveScoreButton" layoutX="630.0" layoutY="433.0" mnemonicParsing="false" onAction="#saveScore" text="Zapisz wynik!" visible="false" />
    <ImageView fx:id="imageView" fitHeight="277.0" fitWidth="313.0" layoutX="251.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
@@ -30,4 +29,15 @@
          <Image url="@../../../images/9.png" />
       </image>
    </ImageView>
+   <ImageView fitHeight="82.0" fitWidth="101.0" layoutX="14.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../../images/buttons/button.png" />
+      </image>
+   </ImageView>
+   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="26.0" prefHeight="28.0" prefWidth="101.0" text="MENU" textFill="WHITE">
+      <font>
+         <Font size="21.0" />
+      </font>
+   </Label>
+   <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#mainMenu" opacity="0.0" prefHeight="46.0" prefWidth="101.0" text="&lt; MENU" />
 </AnchorPane>

@@ -9,9 +9,7 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hangman_ver2.MainMenuController">
    <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-         <Image url="@../../../images/view/main-background.png" />
-      </image>
+      <Image url="@../../../images/view/main-background.png"/>
    </ImageView>
    <Label alignment="CENTER" layoutX="180.0" layoutY="161.0" prefHeight="32.0" prefWidth="175.0" text="Nowa Gra" textFill="WHITE">
       <font>
@@ -36,5 +34,5 @@
    <Button layoutX="180.0" layoutY="161.0" mnemonicParsing="false" onAction="#newGame" opacity="0.0" prefHeight="32.0" prefWidth="175.0" text="Nowa Gra" textAlignment="CENTER" />
    <Button layoutX="180.0" layoutY="210.0" mnemonicParsing="false" onAction="#scoreTable" opacity="0.0" prefHeight="32.0" prefWidth="175.0" text="Ranking" />
    <Button layoutX="180.0" layoutY="262.0" mnemonicParsing="false" onAction="#addWord" opacity="0.0" prefHeight="26.0" prefWidth="175.0" text="Dodaj wlasne slowo" />
-   <Button layoutX="180.0" layoutY="314.0" mnemonicParsing="false" opacity="0.0" prefHeight="32.0" prefWidth="175.0" text="Wyjscie" />
+   <Button layoutX="180.0" layoutY="314.0" mnemonicParsing="false" onAction="#exit" opacity="0.0" prefHeight="32.0" prefWidth="175.0" text="Wyjscie" />
 </AnchorPane>

@@ -1,6 +1,7 @@
 package com.example.hangman_ver2;
 
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -47,6 +48,9 @@ public class MainMenuController {
         ScoreTableController scoreTableController = fxmlLoader.getController();
         scoreTableController.showScores();
         stage.show();
+    }
+    public void exit(){
+        Platform.exit();
     }
 
 
