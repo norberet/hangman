@@ -125,8 +125,10 @@ public class GameController extends  MainMenuController{
         setImage(0);
 
     }
-    public void checkLetter(){ //sprawdzanie hasla
+    public void checkLetter() { //sprawdzanie hasla
+        try {
         char x = letterField.getText().toUpperCase().charAt(0); //pobieramy litere z pola i ustawiamy zmieniamy na wielka
+
         if(usedLetter.contains(x)){
             System.out.println("Już podałeś te litere"); //jesli ta litera juz sie pojawila to nie program nie idzie dalej
             isGoodLabel.setTextFill(Color.valueOf("#dac04e")); //zmiana koloru
@@ -183,6 +185,9 @@ public class GameController extends  MainMenuController{
             playAgainButton.setVisible(true); // "Zagraj jeszcze raz"
             isGoodLabel.setTextFill(Color.valueOf("#b90a0a"));
             isGoodLabel.setText("Następnym razem się uda!"); //informacja zwrotna po przegranej
+        }
+        }catch (RuntimeException e){
+            System.out.println("Puste pole");
         }
     }
     public void setImage(int a){ //wyswietlanie odpowiednich obrazkow
