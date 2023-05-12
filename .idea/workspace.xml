@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b10e50c5-96d4-4a85-9c72-80d6cf57d0fc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/passwords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hangman_ver2/passwords.txt" afterDir="false" />
-    </list>
+    <list default="true" id="b10e50c5-96d4-4a85-9c72-80d6cf57d0fc" name="Changes" comment="dodano obsluge wyjatku RunTimeException uruchamiająca sie gdy ktoś próbuje przesłać puste pole" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -280,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682611716167</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="dodano obsluge wyjatku RunTimeException uruchamiająca sie gdy ktoś próbuje przesłać puste pole">
+      <created>1683897949420</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1683897949420</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -307,6 +311,7 @@
     <MESSAGE value="dzialajaca gra z obrazkami" />
     <MESSAGE value="W pełni działająca gra" />
     <MESSAGE value="W pełni działająca gra - dodano komentarze" />
-    <option name="LAST_COMMIT_MESSAGE" value="W pełni działająca gra - dodano komentarze" />
+    <MESSAGE value="dodano obsluge wyjatku RunTimeException uruchamiająca sie gdy ktoś próbuje przesłać puste pole" />
+    <option name="LAST_COMMIT_MESSAGE" value="dodano obsluge wyjatku RunTimeException uruchamiająca sie gdy ktoś próbuje przesłać puste pole" />
   </component>
 </project>
