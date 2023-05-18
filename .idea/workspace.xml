@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b10e50c5-96d4-4a85-9c72-80d6cf57d0fc" name="Changes" comment="dodano obsluge wyjatku RunTimeException uruchamiająca sie gdy ktoś próbuje przesłać puste pole" />
+    <list default="true" id="b10e50c5-96d4-4a85-9c72-80d6cf57d0fc" name="Changes" comment="dodano hasła">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Zrzut ekranu 2023-05-18 o 18.28.29.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Zrzut ekranu 2023-05-18 o 18.30.00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Zrzut ekranu 2023-05-18 o 18.31.00.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +20,7 @@
       <list>
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -36,15 +42,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;/Users/norbertsaja/IdeaProjects/hangman_ver2/src/main/resources/com/example/hangman_ver2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_directory_selection": "/Users/norbertsaja/IdeaProjects/hangman_ver2/src/main/resources/com/example/hangman_ver2",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.hangman_ver2" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="HangmanGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.hangman_ver2.HangmanGame" />
@@ -284,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683897949420</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="dodano hasła">
+      <created>1683898157426</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1683898157426</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -312,6 +338,7 @@
     <MESSAGE value="W pełni działająca gra" />
     <MESSAGE value="W pełni działająca gra - dodano komentarze" />
     <MESSAGE value="dodano obsluge wyjatku RunTimeException uruchamiająca sie gdy ktoś próbuje przesłać puste pole" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodano obsluge wyjatku RunTimeException uruchamiająca sie gdy ktoś próbuje przesłać puste pole" />
+    <MESSAGE value="dodano hasła" />
+    <option name="LAST_COMMIT_MESSAGE" value="dodano hasła" />
   </component>
 </project>
